@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Bot",
     "description":"Bot em desenvolvimento",
     "version":"1.0",
@@ -9,10 +9,11 @@
         "128": "img/icon.png"
     }, 
     "action": {
-        "16": "img/icon.png",
-        "24": "img/icon.png",
-        "32": "img/icon.png"
+        "default_icon": {
+            "16": "img/icon.png",
+            "24": "img/icon.png",
+            "32": "img/icon.png"
     },
     "default_title": "Bot em desenvolvimento",
     "default_popup": ""
-}
+}}
