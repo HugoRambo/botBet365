@@ -15,5 +15,23 @@
             "32": "img/icon.png"
     },
     "default_title": "Bot em desenvolvimento",
-    "default_popup": ""
-}}
+    "default_popup": "popup/popup.html"
+    },
+    "options_page": "options/options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://cachedownload-br.p-content.gambling-malta.com/live/bundles/*",
+                "https://dl-com.c365play.com/live_desktop/bundles/*"
+            ],
+            "js": [
+                "content/contentScript.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions": [
+        "notifications",
+        "storage"
+    ]
+}
