@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/HugoRambo/botBet365#readme",
   "dependencies": {
+    "playwright": "^1.27.1",
     "puppeteer": "^19.0.0"
   }
 }
