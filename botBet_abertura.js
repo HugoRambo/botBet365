@@ -28,18 +28,15 @@ async function teste ()  {
     await page.waitForLoadState('networkidle');
 
     //await page.pause(); // pause para o comando, e verifica tudo que estou fazendo. 
-    const context = await browser.newContext();
-    await page.getByRole('button', { name: 'PROSSEGUIR' }).click();
-    await page.locator('#header-produto').getByText('TIMES').first().click();
-    // ---------------------
     
-    await page.screenshot ( {path: `imagemasdsa.png`});
-    await context.close();
+    await page.getByRole('button', { name: 'PROSSEGUIR' }).click();
+    
+    await page.screenshot ( {path: `imagemasde2e45523.png`});
+    //await page.pause();
+    //o page.pause(grava qual função é usado naquele momento e auxilia para pegar os comandos. )
+
     await browser.close();
 
 }
 
 teste()
-
-
-//minuto 10 https://www.youtube.com/watch?v=PIDYRoqkW2s&list=PLtEP3BVZ3NUgP_KdOJbMb9kDNMe2TTCT0&index=3
