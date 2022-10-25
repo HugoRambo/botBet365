@@ -28,21 +28,21 @@ async function teste ()  {
     
     //Aguardar o carregamento do site.
     await page.waitForLoadState('networkidle');
-
-    //await page.pause(); // pause para o comando, e verifica tudo que estou fazendo. 
+    await page.getByRole('button', { name: 'PROSSEGUIR' }).click();
+    await page.pause(); // pause para o comando, e verifica tudo que estou fazendo. 
     //o page.pause(grava qual função é usado naquele momento e auxilia para pegar os comandos. )
     
    //Aceitar cookis 
-   await page.locator('text=Aceitar').click()
-   await page.locator('.asduhasuduhsadh').click()
+   //await page.locator('text=Aceitar').click()
+   //await page.locator('.asduhasuduhsadh').click()
    //espera responder
-   await page.waitForURL('https://Casinobets')
-   await page.locator('.clicar onde eu quero').click()
-
+   //await page.waitForURL('https://Casinobets')
+   //await page.locator('.clicar onde eu quero').click()
+}
 
    //função para trazer informações
     
-   async function nameCampetition(){
+   /*async function nameCampetition(){
         //Aguardar até 7500 segundos
         await page.waitForTimeout(7500)
         //Primeiro informação o ALLTEXTCONTENTX, BUSCA TODAS AS INFORMAÇÕES DA pagina
@@ -83,7 +83,7 @@ async function teste ()  {
     
 
   
-
+*/
 
 
 teste()
