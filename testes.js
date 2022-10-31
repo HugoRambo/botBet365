@@ -26,7 +26,7 @@ async function lastGol (){
     await page.screenshot({ path: `exemplu.png`})
     
     await browser.close()
-
+    
 };
 
 lastGol()
