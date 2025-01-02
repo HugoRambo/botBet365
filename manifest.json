@@ -3,7 +3,7 @@
     "name": "Bot",
     "description":"Bot em desenvolvimento",
     "version":"1.0",
-    "icons":{ gvNoLa7wFW
+    "icons":{
         "16": "img/icon.png",
         "48": "img/icon.png",
         "128": "img/icon.png"
